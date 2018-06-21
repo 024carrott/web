@@ -150,7 +150,7 @@ strong {
 }
 
 .navigation a:hover {
-  background-color: rgba(249, 175, 72, 0.486);
+  background-color: rgba(0, 0, 0, 0.219);
   color: #fff;
   border: none;
 }
