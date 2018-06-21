@@ -1,5 +1,6 @@
 .picture {
   @include container;
+  @include min-width;
 }
 .pic-nav {
   width: 720px;

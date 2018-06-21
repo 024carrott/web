@@ -1,5 +1,6 @@
 .program {
   @include container;
+  @include min-width;
   background-color: $background-color;
 }
 .pro-container {

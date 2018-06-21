@@ -1,5 +1,6 @@
 .summary{
   @include container;
+  @include min-width;
   height: 590px;
 }
 .sum-wrapper {
@@ -31,7 +32,7 @@
 
 .char {
   @include container;
-  width: 100%;
+  min-width: 1300px;
   background-color: $background-color;
   & > img {
     display: block;
