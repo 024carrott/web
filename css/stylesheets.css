@@ -103,7 +103,7 @@ strong {
 }
 
 .main-video {
-  min-width: 1300px;
+  min-width: 100%;
   height: 90vh;
 }
 

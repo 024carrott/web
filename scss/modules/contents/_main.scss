@@ -4,7 +4,7 @@
   position: relative;
 }
 .main-video {
-  @include min-width;
+  min-width: 100%;
   height: 90vh;
 }
 
