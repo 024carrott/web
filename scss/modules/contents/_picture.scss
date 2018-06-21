@@ -1,0 +1,27 @@
+.picture {
+  @include container;
+}
+.pic-nav {
+  width: 720px;
+  margin: 0 auto;
+  margin: 76px auto 60px;
+  // background-color: pink;
+  li {
+    display: inline-block;
+    margin: 0 22px;
+    color: #919191;
+    font-size: 16px;
+    &:nth-child(1) {
+      border: 2px solid #587f77;
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+  }
+}
+.pic-container {
+  width: 1050px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+}

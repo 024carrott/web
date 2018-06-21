@@ -1,0 +1,64 @@
+.summary{
+  @include container;
+  height: 590px;
+}
+.sum-wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+.sum-container{
+  width: 303px;
+  display: inline-block;
+  margin: 130px 10px 0px 10px;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.div-text, .sol-text, .emp-text {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.div-sub-text, .sol-sub-text, .emp-sub-text {
+  font-size: 16px;
+  color: #656565;
+  text-align: center;
+  line-height: 32px;
+}
+
+
+.char {
+  @include container;
+  width: 100%;
+  background-color: $background-color;
+  & > img {
+    display: block;
+    margin: 0 auto 60px;
+  }
+}
+.char-wrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+.char-container {
+  width: 210px;
+  display: inline-block;
+  & > img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.char-text {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+}
+.char-sub-text {
+  font-size: 16px;
+  text-align: center;
+  color: $sub-title-color;
+  line-height: 28px;
+}
