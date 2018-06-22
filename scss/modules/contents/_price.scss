@@ -1,0 +1,68 @@
+.price {
+  @include min-width;
+  @include container;
+  background-color: $background-color;
+  height: 892px;
+}
+.price-container {
+  width: 1120px;
+  margin: 58px auto 0px;
+}
+.price-box {
+  position: relative;
+  width: 330px;
+  height: 676px;
+  display: inline-block;
+  margin: 0px 20px;
+  vertical-align: text-top;
+  border-radius: 5px;
+  background-color: #fff;
+  color: $sub-title-color;
+  box-shadow: 0px 0px 10px #ccc;
+  p {
+    font-size: 19px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 46px;
+  }
+}
+.price-name{
+  width: 330px;
+  height: 96px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 96px;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+  color: #fff;
+}
+
+.money {
+  position: absolute;
+  bottom: 0;
+  width: 330px;
+  height: 70px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  padding-top: 26px;
+  border-radius: 0px 0px 5px 5px;
+  & > span {
+    font-size: 14px;
+  }
+}
+.name-standard, .money-standard {
+  background-color: #76a5ae;
+}
+.name-premium, .money-premium {
+  background-color: #e68e6c;
+}
+.name-option{
+  background-color: #555045;
+}
+.area {
+  color: #717574;
+  text-align: center;
+  margin-top: 30px;
+}

@@ -1,0 +1,45 @@
+.review {
+  @include min-width;
+  @include container;
+  height: 750px;
+  background-color: $background-color;
+}
+.review-container {
+  position: relative;
+  width: 1060px;
+  height: 330px;
+  margin: 100px auto 0px;
+  & > span {
+    position: absolute;
+    top: 180px;
+    left: 15px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    color: $sub-title-color;
+  }
+  .yang-il {
+    margin-left: 15px;
+  }
+  & > p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 860px;
+    height: 294px;
+    font-size: 17px;
+    line-height: 32px;
+    & > span {
+      color: #c0c0c0;
+    }
+  }
+}
+.review-container-other {
+  margin-top: 20px;
+}
+.review-hr {
+  margin-top: 160px;
+  height: 1px;
+  border: none;
+  background-color: #b5b5b5;
+}

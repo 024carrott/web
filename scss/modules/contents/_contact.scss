@@ -1,0 +1,102 @@
+.contact {
+  @include min-width;
+  @include container;
+  height: 548px;
+}
+.contact-container {
+  position: relative;
+  width: 1054px;
+  margin: 114px auto 0px;
+  @include clearfix;
+  // background-color: pink;
+}
+.contact-box {
+  width: 324px;
+  height: 346px;
+  float: left;
+  & > p {
+    font-size: 18px;
+    line-height: 33px;
+    color: $sub-title-color;
+  }
+}
+.contact-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.contact-call {
+  width: 324px;
+  height: 156px;
+  margin-top: 64px;
+}
+.message, .call, .space {
+  width: 324px;
+  height: 52px;
+  margin-bottom: 20px;
+  & > img {
+    margin-bottom: -10px;
+  }
+  & > p {
+    display: inline-block;
+    font-size: 16px;
+    padding-top: 16px;
+    color: $sub-title-color;
+  }
+}
+.message {
+  & > p {
+    margin-left: 38px;
+  }
+}
+.call {
+  & > p {
+    margin-left: 38px;
+  }
+}
+.space {
+  & > p {
+    margin-left: 45px;
+  }
+}
+.contact-send {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 530px;
+  height: 560px;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px #ccc;
+  & > p {
+    font-size: 27px;
+    font-weight: 600;
+    margin: 72px 0px 34px 74px;
+  }
+}
+.send-school, .send-phone, .send-content {
+  display: block;
+  margin: 0 auto 22px;
+  padding: 0 20px;
+  width: 332px;
+  height: 46px;
+  font-size: 12px;
+  border: 2px solid #d4d4d4;
+}
+
+input::-ms-input-placeholder { color: rgb(170, 169, 169); }
+input::-webkit-input-placeholder { color: rgb(170, 169, 169); } 
+input::-moz-placeholder { color: rgb(170, 169, 169); }
+
+.send-content {
+  height: 134px;
+}
+.send-btn {
+  display: block;
+  margin: 0 auto;
+  width: 376px;
+  height: 46px;
+  background-color: orange;
+  border: none;
+  font-size: 16px;
+  color: #444;
+}
