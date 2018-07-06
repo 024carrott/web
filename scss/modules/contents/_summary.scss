@@ -6,6 +6,7 @@
 .sum-wrapper {
   width: 980px;
   margin: 0 auto;
+  @include clearfix;
 }
 .sum-container{
   width: 303px;
@@ -15,7 +16,9 @@
     display: block;
     margin: 0 auto;
   }
+  opacity: 0;
 }
+
 .div-text, .sol-text, .emp-text {
   font-size: 28px;
   font-weight: 800;
@@ -39,6 +42,18 @@
     margin: 0 auto 60px;
   }
 }
+.char-img-container {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  // background-color: pink;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
 .char-wrapper {
   width: 1100px;
   margin: 0 auto;
@@ -49,6 +64,9 @@
   & > img {
     display: block;
     margin: 0 auto;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 .char-text {
@@ -62,4 +80,8 @@
   text-align: center;
   color: $sub-title-color;
   line-height: 28px;
+}
+
+.none {
+  display: none;
 }

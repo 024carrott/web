@@ -79,7 +79,7 @@
   padding: 0 20px;
   width: 332px;
   height: 46px;
-  font-size: 12px;
+  font-size: 15px;
   border: 2px solid #d4d4d4;
 }
 
@@ -99,4 +99,7 @@ input::-moz-placeholder { color: rgb(170, 169, 169); }
   border: none;
   font-size: 16px;
   color: #444;
+  &:hover {
+    background-color: darksalmon;
+  }
 }

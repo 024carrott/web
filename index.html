@@ -10,17 +10,32 @@
 <body>
   <div class="wrapper">
     <div class="main">
-      <video width="100%" height="90vh" autoplay muted loop class="main-video" data-setup="{}">
-        <source src="assets/overdam-video.mp4" type="video/mp4" />
-      </video>
+      <div class="video-container">
+        <video width="100%" height="90vh" autoplay muted loop class="main-video" data-setup="{}">
+          <source src="assets/overdam-video.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div class="navigation">
         <ul>
           <img src="./assets/logo-white.png" alt="" class="nav-logo">
-          <li class="nav-program">개요/특징</li>
-          <li class="nav-detail">프로그램</li>
-          <li class="nav-cast">활용사례</li>
-          <li class="nav-status">가격정책</li>
+          <li class="nav-summary">개요/특징</li>
+          <li class="nav-program">프로그램</li>
+          <li class="nav-case">활용사례</li>
+          <li class="nav-price">가격정책</li>
+          <li class="nav-status">현황/리뷰</li>
           <li class="nav-contact">문의하기</li>
+          <a href="https://drive.google.com/open?id=1tSr-3lJqQaffQtAq8pUDeaXeWXvNHJtT" target="_blank">소개자료 다운로드</a>
+        </ul>
+      </div>
+      <div class="navigation fix-navigation none">
+        <ul>
+          <img src="./assets/logo-brown.png" alt="" class="nav-logo fix-nav-logo">
+          <li class="nav-summary fix-nav-summary">개요/특징</li>
+          <li class="nav-program fix-nav-program">프로그램</li>
+          <li class="nav-case fix-nav-case">활용사례</li>
+          <li class="nav-price fix-nav-price">가격정책</li>
+          <li class="nav-status fix-nav-status">현황/리뷰</li>          
+          <li class="nav-contact fix-nav-contact">문의하기</li>
           <a href="https://drive.google.com/open?id=1tSr-3lJqQaffQtAq8pUDeaXeWXvNHJtT" target="_blank">소개자료 다운로드</a>
         </ul>
       </div>
@@ -65,7 +80,9 @@
         <hr class="title-hr">
         <p class="sub-title">개꿈콘서트는 청소년들과 함께 호흡하기 위해<br>
             다양한 장치들과 특화된 프로그램을 가지고 있습니다.</p>
-        <img src="assets/char-main.png" alt="특장점 이미지">
+        <div class="char-img-container">
+          <img src="assets/char-main.png" class="char-img" alt="특장점 이미지">
+        </div>
         <div class="char-wrapper">
           <div class="char-container damq">
             <img src="assets/damq-icon.png" alt="담큐서비스 아이콘">
@@ -110,17 +127,18 @@
       </div>
       <div class="picture">
         <h3 class="title">현장 사진</h3>
-        <hr class="title-hr">
-        <p class="sub-title">개꿈콘서트의 구성들을 현장감있는 사진들로 만나보세요.</p>
+        <!-- <hr class="title-hr"> -->
+        <!-- <p class="sub-title">개꿈콘서트의 구성들을 현장감있는 사진들로 만나보세요.</p> -->
         <ul class="pic-nav">
-          <li>토크쇼/퀴즈쇼</li>
-          <li>또래연사 강연</li>
-          <li>아티스트 공연</li>
-          <li>MC 레크레이션</li>
-          <li>무대장치</li>
+          <div class="pic-active"></div>
+          <li class="pic-talk">토크쇼/퀴즈쇼</li>
+          <li class="pic-speaker">또래연사 강연</li>
+          <li class="pic-artist">아티스트 공연</li>
+          <li class="pic-mc">전문 MC 진행</li>
+          <li class="pic-damq">모바일앱 담큐</li>
         </ul>
         <div class="pic-container">
-          <img src="assets/pic-example.png" alt="현장사진 예시">
+          <img src="assets/picture-talk.png" class="pic-img" alt="토크쇼,퀴즈쇼 현장사진">
         </div>
       </div>
       <div class="program">
@@ -272,7 +290,7 @@
         <div class="review-container review-container-other">
           <img src="assets/review-img.png" alt="후기-사람 이미지">
           <span class="yang-il">양일고등학교 <br> 1학년</span>
-          <p>평소에 학교에서 진로콘서트를 한다고 하면 지루한 강의 같은게 대부분이었는데, 개꿈 콘서트는 관객의 호응과 관객의 반응이 중요하게 여겨지는 만큼 더욱 콘서트에 집중하고, 재미를 느꼈던 것 같다. 강의를 들으며 나 자신의 얘기 같다는 생각이 정말 많이 들었다. 망설이고 마음에 담아두었던 꿈을 나와는 다르게 찬찬히 이루어가는 강연자분들을 보며 용기를 얻게 된 것 같다. 나는 시작도 전에 겁먹는 일이 많았었다. 하지만 이번에 개꿈콘서트를 보고 지금 당장 하고싶은건 못해도 포기하고싶다는 생각이 없어졌다. 내가 좋아하는 일을 주로 하는게 아니어도 언제나 같이 병행할거고 둘 다 성공해보일 수 있을지도 모르겠다는 기분이 든다. 실패해도 일어날 수 있을거라는 믿음이 생겼다! 그림 그리는걸 계속 할수있도록 노력할것이다!<br><span class="review-date">2018.06.21</span></p>
+          <p>평소에 학교에서 진로콘서트를 한다고 하면 지루한 강의 같은게 대부분이었는데, 개꿈 콘서트는 관객의 호응과 관객의 반응이 중요하게 여겨지는 만큼 더욱 콘서트에 집중하고, 재미를 느꼈던 것 같다. 강의를 들으며 나 자신의 얘기 같다는 생각이 정말 많이 들었다. 망설이고 마음에 담아두었던 꿈을 나와는 다르게 찬찬히 이루어가는 강연자분들을 보며 용기를 얻게 된 것 같다. 나는 시작도 전에 겁먹는 일이 많았었다. 하지만 이번에 개꿈콘서트를 보고 지금 당장 하고싶은건 못해도 포기하고싶다는 생각이 없어졌다. 내가 좋아하는 일을 주로 하는게 아니어도 언제나 같이 병행할거고 둘 다 성공해보일 수 있을지도 모르겠다는 기분이 든다. 실패해도 일어날 수 있을거라는 믿음이 생겼다!<br><span class="review-date">2018.06.21</span></p>
         </div>
       </div>
       <div class="contact">
@@ -301,9 +319,9 @@
             <p>언제든지 연락주십시오.</p>
             <form action="https://formspree.io/024carrot@naver.com"
               method="POST">
-              <input type="text" name="학교명" placeholder="학교명" class="send-school">
-              <input type="text" name="연락처(핸드폰번호)" placeholder="연락처(핸드폰번호)" class="send-phone">
-              <input type="text" name="문의내용(계획 일정 등)" placeholder="문의내용 ( 계획 일정 등 )" class="send-content">
+              <input type="text" name="학교 / 기관명" placeholder="학교 / 기관명" class="send-school">
+              <input type="text" name="연락처(핸드폰번호)" placeholder="연락처 ( 핸드폰번호 )" class="send-phone">
+              <input type="text" name="문의내용(계획일정 등)" placeholder="문의내용 ( 계획 일정 등 )" class="send-content">
               <input type="submit" value="SEND" class="send-btn">
             </form>
           </div>
@@ -315,13 +333,17 @@
           전화번호: 02-959-7745 <br>
           Copyright 2018. (담넘어) All rights reserved.</p>
         <div class="footer-img-container">
-          <img src="assets/footer-facebook.png" alt="페이스북 아이콘">
-          <img src="assets/footer-blog-orange.png" alt="블로그 아이콘">
-          <img src="assets/footer-twitter.png" alt="트위터 아이콘">
+          <a href="#"><img src="assets/footer-facebook.png" alt="페이스북 아이콘"></a>
+          <a href="#"><img src="assets/footer-blog-orange.png" alt="블로그 아이콘"></a>
+          <a href="#"><img src="assets/footer-twitter.png" alt="트위터 아이콘"></a>
         </div>
       </footer>
            <!-- 시작 -->
     </div>
   </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/char.js"></script>
+  <script src="js/picture.js"></script>
 </body>
 </html>

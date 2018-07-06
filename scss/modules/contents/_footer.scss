@@ -6,12 +6,13 @@ footer {
     padding-top: 130px;
     text-align: center;
     line-height: 25px;
+    color: $sub-title-color;
   }
 }
 .footer-img-container {
   width: 192px;
   margin: 27px auto 0px;
-  & > img {
+  & > a > img {
     width: 42px;
     margin: 0px 8px;
   }

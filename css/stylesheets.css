@@ -58,6 +58,14 @@ strong {
   font-weight: 800;
 }
 
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 .wrap {
   min-width: 1800px;
 }
@@ -74,7 +82,7 @@ strong {
 }
 
 .sub-title {
-  font-size: 18px;
+  font-size: 16px;
   color: #606060;
   text-align: center;
   line-height: 32px;
@@ -102,9 +110,15 @@ strong {
   position: relative;
 }
 
-.main-video {
-  min-width: 100%;
+.video-container {
+  min-width: 1600px;
   height: 90vh;
+}
+
+.main-video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .navigation {
@@ -117,7 +131,7 @@ strong {
   text-align: center;
   font-size: 0.92rem;
   padding-top: 20px;
-  background-color: rgba(66, 66, 66, 0.219);
+  background-color: rgba(66, 66, 66, 0.418);
 }
 
 .navigation ul {
@@ -127,13 +141,12 @@ strong {
 
 .navigation li {
   display: inline-block;
-  margin-left: 10px;
+  margin: 28px 18px 0px;
   cursor: pointer;
 }
 
-.navigation li:nth-child(2):hover, .navigation :nth-child(3):hover, .navigation :nth-child(4):hover, .navigation :nth-child(5):hover, .navigation :nth-child(6):hover {
-  border-bottom: 1px solid #f9af48;
-  color: #f9af48;
+.navigation li:hover {
+  border-bottom: 2px solid #fff;
   padding-bottom: 7px;
 }
 
@@ -153,21 +166,39 @@ strong {
   color: #fff;
 }
 
+.fix-navigation {
+  z-index: 500;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0px 2px 30px #999;
+  color: #141414;
+}
+
+.fix-navigation li:hover {
+  border-bottom: 2px solid #999;
+}
+
+.fix-navigation a {
+  color: #141414;
+  border-color: #141414;
+}
+
+.fix-navigation a:hover {
+  background-color: #141414;
+  color: #fff;
+}
+
 .nav-logo {
   width: 160px;
   height: 100px;
-  padding: 0px 5px 5px 5px;
+  padding: 3px 5px 5px 5px;
   float: left;
   position: relative;
   bottom: 25px;
 }
 
-.nav-program, .nav-detail, .nav-cast, .nav-status {
-  margin-right: 50px;
-}
-
-.nav-program, .nav-detail, .nav-cast, .nav-status, .nav-contact {
-  margin-top: 30px;
+.nav-logo:hover {
+  cursor: pointer;
 }
 
 .main-title {
@@ -224,10 +255,17 @@ strong {
   margin: 0 auto;
 }
 
+.sum-wrapper::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .sum-container {
   width: 303px;
   display: inline-block;
   margin: 130px 10px 0px 10px;
+  opacity: 0;
 }
 
 .sum-container img {
@@ -260,6 +298,20 @@ strong {
   margin: 0 auto 60px;
 }
 
+.char-img-container {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+}
+
+.char-img-container img {
+  width: 100%;
+}
+
+.char-img-container:hover {
+  cursor: pointer;
+}
+
 .char-wrapper {
   width: 1100px;
   margin: 0 auto;
@@ -273,6 +325,10 @@ strong {
 .char-container > img {
   display: block;
   margin: 0 auto;
+}
+
+.char-container:hover {
+  cursor: pointer;
 }
 
 .char-text {
@@ -289,13 +345,18 @@ strong {
   line-height: 28px;
 }
 
+.none {
+  display: none;
+}
+
 .picture {
   padding: 140px 0;
   min-width: 1300px;
 }
 
 .pic-nav {
-  width: 720px;
+  position: relative;
+  width: 700px;
   margin: 0 auto;
   margin: 76px auto 60px;
 }
@@ -307,10 +368,20 @@ strong {
   font-size: 16px;
 }
 
-.pic-nav li:nth-child(1) {
+.pic-nav li:hover {
+  color: #f9af48;
+  cursor: pointer;
+}
+
+.pic-active {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 130px;
+  height: 35px;
   border: 2px solid #587f77;
   border-radius: 20px;
-  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .pic-container {
@@ -377,7 +448,7 @@ strong {
 .small-box {
   width: 112px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 16px;
   border: 1px solid #4c6eb5;
   border-radius: 16px;
@@ -636,14 +707,16 @@ strong {
   left: 50%;
   margin-left: -200px;
   z-index: 100;
+  opacity: 0;
 }
 
 .map-text {
   position: absolute;
-  top: 0px;
+  top: -80px;
   left: 50%;
   margin-left: -503px;
   z-index: 300;
+  opacity: 0;
 }
 
 .review {
@@ -792,7 +865,7 @@ strong {
   padding: 0 20px;
   width: 332px;
   height: 46px;
-  font-size: 12px;
+  font-size: 15px;
   border: 2px solid #d4d4d4;
 }
 
@@ -823,6 +896,10 @@ input::-moz-placeholder {
   color: #444;
 }
 
+.send-btn:hover {
+  background-color: darksalmon;
+}
+
 footer {
   min-width: 1300px;
   height: 346px;
@@ -833,6 +910,7 @@ footer > p {
   padding-top: 130px;
   text-align: center;
   line-height: 25px;
+  color: #606060;
 }
 
 .footer-img-container {
@@ -840,7 +918,7 @@ footer > p {
   margin: 27px auto 0px;
 }
 
-.footer-img-container > img {
+.footer-img-container > a > img {
   width: 42px;
   margin: 0px 8px;
 }

@@ -51,6 +51,12 @@ a {
 strong{
 	font-weight: 800;
 }
+button:focus {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
 
 // width 값
 
