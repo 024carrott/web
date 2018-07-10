@@ -508,8 +508,8 @@ input:focus {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -40%);
-  width: 825px;
-  height: 628px;
+  width: 900px;
+  height: 650px;
   background-color: #fff;
   margin: 0 auto;
   border-radius: 10px;
@@ -568,8 +568,8 @@ input:focus {
 
 .modal-img {
   display: block;
-  width: 700px;
-  margin: 60px auto 0px;
+  width: 800px;
+  margin: 40px auto 0px;
   z-index: 900;
 }
 
@@ -578,7 +578,7 @@ input:focus {
 }
 
 .modal-step-text {
-  width: 692px;
+  width: 800px;
   height: 166px;
   margin: 0 auto;
 }
@@ -597,23 +597,23 @@ input:focus {
 }
 
 .modal-step-text li:nth-child(1) {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .modal-step-text li:nth-child(2) {
-  margin-left: 38px;
+  margin-left: 60px;
 }
 
 .modal-step-text li:nth-child(3) {
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .modal-step-text li:nth-child(4) {
-  margin-left: 39px;
+  margin-left: 60px;
 }
 
 .modal-step-text li:nth-child(5) {
-  margin-left: 48px;
+  margin-left: 70px;
 }
 
 .modal-contact-btn {

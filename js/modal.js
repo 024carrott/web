@@ -42,14 +42,9 @@
 
 
 
-
-
-
-
-
   type_btn.click('click', function(e){
     type_modal.removeClass('none');
-    $('.program, .fix-navigation, .case').css('filter', 'brightness(0.5)');
+    // $('.program, .fix-navigation, .case').css('filter', 'brightness(0.5)');
     $('html, body').on('scroll touchmove mousewheel', function(event) {
       event.preventDefault();
       event.stopPropagation();
@@ -60,7 +55,7 @@
 
   step_btn.click('click', function(e){
     step_modal.removeClass('none');
-    $('.program, .fix-navigation, .case').css('filter', 'brightness(0.5)');
+    // $('.program, .fix-navigation, .case').css('filter', 'brightness(0.5)');
     $('html, body').on('scroll touchmove mousewheel', function(event) {
       event.preventDefault();
       event.stopPropagation();
