@@ -15,6 +15,7 @@
   border: 1px solid #fff;
   border-radius: 3px;
   box-shadow: 3px 3px 10px #ccc;
+  border-radius: 3px;
   float: left;
   & > .small-box {
     background-color: #fdb428;
@@ -29,11 +30,14 @@
   border-radius: 3px;
   box-shadow: 3px 3px 10px #ccc;  
   float: right;
+  border-radius: 3px;
+
 }
 .program-img {
   width: 100%;
   height: 325px;
   margin-bottom: 35px;
+  border-radius: 3px 3px 0px 0px;
  // s-수정 필요
   background-color: #141414;
   color: #fff;
@@ -83,5 +87,109 @@
   font-size: 16px;
   &:hover {
     background-color: $background-color;
+    cursor: pointer;
   }
+}
+
+// 모달 스타일링
+
+.program-type-modal, .program-step-modal {
+  position: fixed;
+  z-index: 900;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  width: 825px;
+  height: 628px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  @include clearfix;
+  span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 32px;
+    margin-left: -10px;
+    color: $sub-title-color;
+  }
+}
+.bar {
+  margin: 25px;
+  width: 5px;
+  height: 30px;
+  float: left;
+}
+.close-btn {
+  width: 20px;
+  float: right;
+  margin: 20px;
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.modal-title {
+  @include title;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.modal-sub-title {
+  @include sub-title;
+  // color: red;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 30px;
+}
+.modal-img {
+  display: block;
+  width: 700px;
+  margin: 60px auto 0px;
+  z-index: 900;
+}
+.modal-step-img {
+  margin-top: 85px;
+}
+.modal-step-text {
+  width: 692px;
+  height: 166px;
+  margin: 0 auto;
+  @include clearfix;
+  li {
+    float: left;
+    text-align: center;
+    margin-top: 32px;
+    line-height: 23px;
+    &:nth-child(1){
+      margin-left: 10px;
+    }
+    &:nth-child(2){
+      margin-left: 38px;
+    }
+    &:nth-child(3){
+      margin-left: 40px;
+    }
+    &:nth-child(4){
+      margin-left: 39px;
+    }
+    &:nth-child(5){
+      margin-left: 48px;
+    }
+  }
+}
+.modal-contact-btn {
+  display: block;
+  width: 162px;
+  height: 30px;
+  margin: 30px auto 0px;
+  color: #141414;
+  background-color: gold;
+  border: none;
+  border-radius: 3px;
+  &:hover {
+    background-color: orange;
+  }
+}
+.modal-step-btn {
+  margin-top: 4px;
 }

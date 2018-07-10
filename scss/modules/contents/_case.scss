@@ -1,6 +1,7 @@
 .case {
   @include min-width;
   @include container;
+  background-color: #fff;
 }
 .case-container {
   width: 1096px;
@@ -47,6 +48,7 @@
   }
   &:hover {
     background-color: $background-color;
+    cursor: pointer;
   }
 }
 .case-more-text {

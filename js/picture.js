@@ -16,31 +16,41 @@
       $(active_box).animate({
         left: 0
       }, 500);
-      img.attr('src', 'assets/picture-talk.png');
+      setTimeout(function() {
+        img.attr('src', 'assets/picture-talk.png');
+      }, 500);
     });
     speaker.click('click', function() {
       $(active_box).animate({
         left: 140
       }, 500);
-      img.attr('src', 'assets/picture-speaker.png');
+      setTimeout(function() {
+        img.attr('src', 'assets/picture-speaker.png');
+      }, 500);
     });
     artist.click('click', function() {
       $(active_box).animate({
         left: 280
       }, 500);
-      $(img).attr('src', 'assets/picture-artist.png');      
+      setTimeout(function() {
+        $(img).attr('src', 'assets/picture-artist.png');      
+      }, 500);
     });
     mc.click('click', function() {
       $(active_box).animate({
         left: 420
       }, 500);
-      $(img).attr('src', 'assets/picture-mc.png');      
+      setTimeout(function() {
+        $(img).attr('src', 'assets/picture-mc.png');      
+      }, 500);
     });
     damq.click('click', function() {
       $(active_box).animate({
         left: 558
       }, 500);
-      $(img).attr('src', 'assets/picture-damq.png');      
+      setTimeout(function() {
+        $(img).attr('src', 'assets/picture-damq.png');      
+      }, 500);
     });
 
   }
