@@ -131,7 +131,7 @@
       }, 1600)
     });
 
-    if(scrollPosition_summary <= Y && Y < scrollPosition_program - 30){
+    if(scrollPosition_summary - 30 <= Y && Y < scrollPosition_program - 30){
       $(fix_summary).css('color', 'rgb(249, 175, 72)');
     }else {
       $(fix_summary).css('color', '#141414');
