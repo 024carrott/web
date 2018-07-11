@@ -9,6 +9,7 @@
   //if it is successful
   .success(function(e){
     //where you want the redirect to go
+    alert('전송완료');
     window.location.replace("./thankyou.html");
   })
   //reset the submit button if the submission fails
