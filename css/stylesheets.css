@@ -120,6 +120,7 @@ input:focus {
 
 .main-video {
   width: 2000px;
+  margin: 0 auto;
 }
 
 .navigation {
