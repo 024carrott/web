@@ -56,6 +56,10 @@
         scrollPosition_status = $(status_start).offset().top - 80,
         scrollPosition_contact = $(contact_start).offset().top - 80;
 
+    var contact_btn = $('.modal-contact-btn'),
+        type_modal = $('.program-type-modal'),
+        step_modal = $('.program-step-modal');
+
 
     $(main_btn).click(function() {
       $(html).stop().animate({
@@ -131,6 +135,16 @@
       }, 1600)
     });
 
+    // modal-contact-btn
+    contact_btn.click(function(e) {
+      type_modal.addClass('none');
+      step_modal.addClass('none');
+      $('html, body').off('scroll touchmove mousewheel');
+      $('.program, .fix-navigation, .case').css('filter', 'brightness(1)');
+      $(html).stop().animate({
+        scrollTop: scrollPosition_contact
+      }, 2000);
+    })
 
     if(scrollPosition_summary - 30 <= Y && Y < scrollPosition_program - 30){
       $(fix_summary).css('color', 'rgb(249, 175, 72)');

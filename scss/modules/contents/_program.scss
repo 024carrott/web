@@ -2,6 +2,7 @@
   @include container;
   @include min-width;
   background-color: $background-color;
+  z-index: 1000;
 }
 .pro-container {
   width: 1054px;
@@ -92,13 +93,15 @@
 }
 
 // 모달 스타일링
-
+.modal-container {
+  position: relative;
+}
 .program-type-modal, .program-step-modal {
   position: fixed;
   z-index: 900;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
   // width: 825px;
   width: 900px;
   // height: 628px;
@@ -183,12 +186,14 @@
 .modal-contact-btn {
   display: block;
   width: 162px;
-  height: 30px;
+  height: 40px;
   margin: 30px auto 0px;
   color: #141414;
   background-color: gold;
   border: none;
   border-radius: 3px;
+  font-size: 13px;
+  padding: 0;
   &:hover {
     background-color: orange;
   }

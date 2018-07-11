@@ -166,6 +166,8 @@
             <button class="pro-more-btn step-btn">MORE</button>
           </div>
         </div>
+      </div>
+      <div class="modal-container">
         <div class="program-type-modal none">
           <img src="assets/bar-icon.png" alt="구분선 아이콘" class="bar">
           <span>기본형</span>
@@ -344,9 +346,9 @@
             <p>언제든지 연락주십시오.</p>
             <form action="https://formspree.io/024carrot@naver.com"
               method="POST">
-              <input type="text" name="학교 / 기관명" placeholder="학교 / 기관명" class="send-school">
-              <input type="text" name="연락처(핸드폰번호)" placeholder="연락처 ( 핸드폰번호 )" class="send-phone">
-              <input type="text" name="문의내용(계획일정 등)" placeholder="문의내용 ( 계획 일정 등 )" class="send-content">
+              <input type="text" name="학교 / 기관명" placeholder="학교 / 기관명" class="send-school" required type="text">
+              <input type="text" name="연락처(핸드폰번호)" placeholder="연락처 ( 핸드폰번호 )" class="send-phone" required type="text">
+              <textarea type="text" name="문의내용(계획일정 등)" placeholder="문의내용 ( 계획 일정 등 )" class="send-content" required type="text"></textarea> 
               <input type="submit" value="SEND" class="send-btn">
             </form>
           </div>
@@ -371,5 +373,6 @@
   <script src="js/char.js"></script>
   <script src="js/picture.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
   @include min-width;
   @include container;
   background-color: #fff;
+  z-index: -100;
 }
 .case-container {
   width: 1096px;
