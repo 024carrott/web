@@ -16,7 +16,8 @@
 .video-container {
   // position: absolute;
   // top: 0;
-  @include min-width;
+  // @include min-width;
+  width: 2302px;
   margin: 0 auto;
   height: 90vh;
   overflow: hidden;

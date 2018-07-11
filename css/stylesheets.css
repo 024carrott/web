@@ -111,7 +111,7 @@ input:focus {
 }
 
 .video-container {
-  min-width: 1300px;
+  width: 2302px;
   margin: 0 auto;
   height: 90vh;
   overflow: hidden;
