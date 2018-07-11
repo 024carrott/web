@@ -111,16 +111,13 @@ input:focus {
 }
 
 .video-container {
-  position: absolute;
   width: 100%;
   height: 90vh;
-  top: 0;
-  left: 0;
   overflow: hidden;
 }
 
 .main-video {
-  width: 100%;
+  min-width: 1300px;
   height: 100%;
 }
 

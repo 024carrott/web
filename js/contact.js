@@ -1,7 +1,7 @@
 (function(global) {
 
   $.ajax({
-    url: "https://formspree.io/024carrot@naver.com", 
+    url: "https://formspree.io/email.email.com", 
     method: "POST",
     data: $('#contact-form').serialize(), //takes all items in form
     dataType: "json" // the data structure type
