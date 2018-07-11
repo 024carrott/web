@@ -18,7 +18,7 @@
       }, 500);
       setTimeout(function() {
         img.attr('src', 'assets/picture-talk.png');
-      }, 500);
+      }, 300);
     });
     speaker.click('click', function() {
       $(active_box).animate({
@@ -26,7 +26,7 @@
       }, 500);
       setTimeout(function() {
         img.attr('src', 'assets/picture-speaker.png');
-      }, 500);
+      }, 300);
     });
     artist.click('click', function() {
       $(active_box).animate({
@@ -34,7 +34,7 @@
       }, 500);
       setTimeout(function() {
         $(img).attr('src', 'assets/picture-artist.png');      
-      }, 500);
+      }, 300);
     });
     mc.click('click', function() {
       $(active_box).animate({
@@ -42,7 +42,7 @@
       }, 500);
       setTimeout(function() {
         $(img).attr('src', 'assets/picture-mc.png');      
-      }, 500);
+      }, 530);
     });
     damq.click('click', function() {
       $(active_box).animate({
@@ -50,7 +50,7 @@
       }, 500);
       setTimeout(function() {
         $(img).attr('src', 'assets/picture-damq.png');      
-      }, 500);
+      }, 300);
     });
 
   }
