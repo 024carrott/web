@@ -112,7 +112,7 @@ input:focus {
 
 .video-container {
   min-width: 1300px;
-  background-color: red;
+  background-color: #141414;
   margin: 0 auto;
   height: 100vh;
   overflow: hidden;
