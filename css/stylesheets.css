@@ -111,14 +111,14 @@ input:focus {
 }
 
 .video-container {
-  min-width: 1300px;
+  width: 2500px;
   margin: 0 auto;
   height: 100vh;
   overflow: hidden;
 }
 
 .main-video {
-  width: 2000px;
+  width: 100%;
 }
 
 .navigation {
