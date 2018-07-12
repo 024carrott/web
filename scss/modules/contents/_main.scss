@@ -8,14 +8,11 @@
   // position: absolute;
   // top: 0;
   @include min-width;
-  width: 2000px;
   margin: 0 auto;
   height: 100vh;
   overflow: hidden;
 }
 .main-video {
-  // @include min-width;
-  // width: 2500px;
   width: 2000px;
   // height: 100%;
   
