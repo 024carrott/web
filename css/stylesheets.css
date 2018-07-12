@@ -108,11 +108,11 @@ input:focus {
   min-width: 1300px;
   height: 100vh;
   position: relative;
+  background-color: #141414;
 }
 
 .video-container {
   min-width: 1300px;
-  background-color: #141414;
   width: 2000px;
   margin: 0 auto;
   height: 100vh;
