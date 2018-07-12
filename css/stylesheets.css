@@ -108,6 +108,7 @@ input:focus {
   min-width: 1300px;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .video-container {
@@ -119,7 +120,8 @@ input:focus {
 }
 
 .main-video {
-  width: 2000px;
+  height: 100%;
+  display: block;
   margin: 0 auto;
 }
 
