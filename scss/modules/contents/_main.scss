@@ -2,20 +2,22 @@
   @include min-width;
   height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 .video-container {
+  // position: absolute;
+  // top: 0;
   @include min-width;
   background-color: #141414;
+  width: 2000px;
   margin: 0 auto;
   height: 100vh;
   overflow: hidden;
 }
 .main-video {
   // @include min-width;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
+  // width: 2500px;
+  width: 2000px;
+  // height: 100%;
   
 }
 
