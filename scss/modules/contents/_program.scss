@@ -91,7 +91,8 @@
   color: $sub-title-color;
   font-size: 16px;
   &:hover {
-    background-color: $background-color;
+    background-color: #eee;
+    border-radius: 3px;
     cursor: pointer;
   }
 }
@@ -104,7 +105,7 @@
   position: fixed;
   z-index: 900;
   left: 50%;
-  top: 50%;
+  top: 52%;
   transform: translate(-50%, -50%);
   // width: 825px;
   width: 900px;

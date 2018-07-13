@@ -30,7 +30,7 @@
   step_btn.click('click', function(e){
     step_modal.removeClass('none');
     $('.program, .fix-navigation, .case').css('filter', 'brightness(0.4)');
-    $('.program, .fix-navigation, .case').css('-webkit-filter', 'brightness(0.4)');
+    // $('.program, .fix-navigation, .case').css('-webkit-filter', 'brightness(0.4)');
     $('.program, .fix-navigation, .case').css('-ms-filter', 'brightness(0.4)');
     $('html, body').on('scroll touchmove mousewheel', function(event) {
       event.preventDefault();
@@ -46,18 +46,18 @@
     step_modal.addClass('none');
     $('html, body').off('scroll touchmove mousewheel');
     $('.program, .fix-navigation, .case').css('filter', 'brightness(1)');
-    $('.program, .fix-navigation, .case').css('-webkit-filter', 'brightness(1)');
+    // $('.program, .fix-navigation, .case').css('-webkit-filter', 'brightness(1)');
     $('.program, .fix-navigation, .case').css('-ms-filter', 'brightness(1)');
   });
 
-  $('.case').click('click', function(e) {
-    type_modal.addClass('none');
-    step_modal.addClass('none');
-    $('html, body').off('scroll touchmove mousewheel');
-    $('.program, .fix-navigation, .case').css('filter', 'brightness(1)');
-    $('.program, .fix-navigation, .case').css('-webkit-filter', 'brightness(1)');
-    $('.program, .fix-navigation, .case').css('-webkit-ms', 'brightness(1)');
-  });
+  // $('.case').click('click', function(e) {
+  //   type_modal.addClass('none');
+  //   step_modal.addClass('none');
+  //   $('html, body').off('scroll touchmove mousewheel');
+  //   $('.program, .fix-navigation, .case').css('filter', 'brightness(1)');
+  //   $('.program, .fix-navigation, .case').css('-webkit-filter', 'brightness(1)');
+  //   $('.program, .fix-navigation, .case').css('-webkit-ms', 'brightness(1)');
+  // });
 
 
   // contact

@@ -119,6 +119,7 @@ input:focus {
 }
 
 .main-video {
+  display: block;
   width: 2000px;
 }
 
@@ -205,7 +206,7 @@ input:focus {
 .main-title {
   position: absolute;
   width: 1100px;
-  top: 55%;
+  top: 53%;
   transform: translateY(-55%);
   left: 50%;
   margin-left: -524px;
@@ -246,7 +247,7 @@ input:focus {
 }
 
 .summary {
-  padding: 140px 0;
+  padding: 120px 0;
   min-width: 1300px;
   height: 590px;
 }
@@ -289,7 +290,7 @@ input:focus {
 }
 
 .char {
-  padding: 140px 0;
+  padding: 120px 0;
   min-width: 1300px;
   background-color: #ecf5f3;
 }
@@ -351,7 +352,7 @@ input:focus {
 }
 
 .picture {
-  padding: 140px 0;
+  padding: 120px 0;
   min-width: 1300px;
 }
 
@@ -395,7 +396,7 @@ input:focus {
 }
 
 .program {
-  padding: 140px 0;
+  padding: 120px 0;
   min-width: 1300px;
   background-color: #ecf5f3;
   z-index: 1000;
@@ -500,7 +501,8 @@ input:focus {
 }
 
 .pro-more-btn:hover {
-  background-color: #ecf5f3;
+  background-color: #eee;
+  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -512,7 +514,7 @@ input:focus {
   position: fixed;
   z-index: 900;
   left: 50%;
-  top: 50%;
+  top: 52%;
   transform: translate(-50%, -50%);
   width: 900px;
   height: 650px;
@@ -645,7 +647,7 @@ input:focus {
 
 .case {
   min-width: 1300px;
-  padding: 140px 0;
+  padding: 120px 0;
   background-color: #fff;
   z-index: -100;
 }
@@ -718,7 +720,7 @@ input:focus {
 
 .price {
   min-width: 1300px;
-  padding: 140px 0;
+  padding: 120px 0;
   background-color: #ecf5f3;
   height: 892px;
 }
@@ -796,7 +798,7 @@ input:focus {
 
 .status {
   min-width: 1300px;
-  padding: 140px 0;
+  padding: 120px 0;
   height: 945px;
 }
 
@@ -872,7 +874,7 @@ input:focus {
 
 .review {
   min-width: 1300px;
-  padding: 140px 0;
+  padding: 120px 0;
   height: 750px;
   background-color: #ecf5f3;
 }
@@ -925,7 +927,7 @@ input:focus {
 
 .contact {
   min-width: 1300px;
-  padding: 140px 0;
+  padding: 120px 0;
   height: 548px;
 }
 
@@ -1053,6 +1055,13 @@ textarea:focus::-webkit-input-placeholder {
 
 textarea:focus::-moz-placeholder {
   color: transparent;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .send-content {

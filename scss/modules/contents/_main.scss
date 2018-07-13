@@ -11,6 +11,7 @@
   overflow: hidden;
 }
 .main-video {
+  display: block;
   width: 2000px;
 }
 
@@ -89,7 +90,7 @@
 .main-title {
   position: absolute;
   width: 1100px;
-  top: 55%;
+  top: 53%;
   transform: translateY(-55%);
   left: 50%;
   margin-left: -524px;

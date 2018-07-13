@@ -94,6 +94,13 @@ textarea::placeholder { color: rgb(170, 169, 169); line-height: 134px;}
 textarea:focus::-webkit-input-placeholder {color: transparent;}
 textarea:focus::-moz-placeholder {color: transparent;}
 
+textarea { 
+  overflow: auto;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .send-content {
   height: 134px;
   padding: 10px 20px;
