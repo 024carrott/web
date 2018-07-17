@@ -121,6 +121,7 @@ input:focus {
 .main-video {
   display: block;
   width: 2000px;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -1062,6 +1063,7 @@ textarea {
   resize: none;
   font-family: inherit;
   font-size: inherit;
+  line-height: 134px;
 }
 
 .send-content {
