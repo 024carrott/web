@@ -67,6 +67,7 @@
   height: 560px;
   background-color: #fff;
   box-shadow: 0px 0px 30px #ccc;
+  border-radius: 2px;
   & > p {
     font-size: 27px;
     font-weight: 600;
@@ -75,7 +76,8 @@
 }
 .send-school, .send-phone, .send-content {
   display: block;
-  margin: 0 auto 22px;
+  // margin: 0 auto 22px;
+  margin: 0 auto;
   padding: 0 20px;
   width: 332px;
   height: 46px;
@@ -99,7 +101,7 @@ textarea {
   resize: none;
   font-family: inherit;
   font-size: inherit;
-  line-height: 134px;
+  // line-height: 134px;
 }
 
 .send-content {
@@ -108,13 +110,14 @@ textarea {
 }
 .send-btn {
   display: block;
-  margin: 0 auto;
+  margin: 15px auto 0px;
   width: 376px;
   height: 46px;
   background-color: gold;
   border: none;
   font-size: 16px;
   color: #444;
+  line-height: 15px;
   &:hover {
     background-color: orange;
   }
