@@ -1,0 +1,48 @@
+body {
+  @include min-width;
+  position: relative;
+  height: 100vh;
+}
+.thanks-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  img {
+    width: 80px;
+    display: block;
+    margin: 50px auto 20px;
+  }
+  p {
+    text-align: center;
+  }
+  button {
+    width: 180px;
+    height: 40px;
+    display: block;
+    margin: 40px auto 40px;
+    background-color: #ffda04;
+    border: 1px solid #ffda04;
+    border-radius: 50px;
+    a {
+      color: #141414;
+      font-size: 13px;
+    }
+    &:hover {
+      background-color: #ffb700;
+      border-color: #ffb700;
+    }
+  }
+}
+.thanks-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+.thanks-sub-text {
+  margin: 10px 0px 0px 0px;
+  font-size: 14px;
+}
