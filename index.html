@@ -348,8 +348,9 @@
           </div>
           <div class="contact-send">
             <p>언제든지 연락주십시오.</p>
-            <form id="gform" action="https://script.google.com/macros/s/AKfycbz92jHJ2VL3qPhfh04dkhks0bn_o2pC0wE_5KWD/exec" method="POST"> 
+            <form id="gform" action="https://script.google.com/macros/s/AKfycbz92jHJ2VL3qPhfh04dkhks0bn_o2pC0wE_5KWD/exec" method="POST" autocomplete="off"> 
               <input type="text" name="학교/기관명" value="" class="send-school" placeholder="학교 / 기관명"><br>
+              <input type="text" name="이메일" value="" class="send-email" placeholder="E-mail"><br>
               <input type="text" name="연락처" value="" class="send-phone" placeholder="연락처 ( 핸드폰 번호 )"><br>
               <textarea type="text" name="문의내용" class="send-content" placeholder="문의내용 ( 계획 일정 등 )"></textarea>
               <input type="submit" class="send-btn" value="SEND">
@@ -386,6 +387,5 @@
   <script src="js/modal.js"></script>
   <script src="js/contact.js"></script>
   <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-  <script src="js/google.js"></script>
 </body>
 </html>

@@ -563,7 +563,7 @@ input:focus {
   font-weight: 600;
   text-align: center;
   font-size: 30px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .modal-sub-title {
@@ -1010,16 +1010,16 @@ input:focus {
 }
 
 .contact-send > p {
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 600;
-  margin: 72px 0px 34px 74px;
+  margin: 42px 0px 34px 74px;
 }
 
-.send-school, .send-phone, .send-content {
+.send-school, .send-phone, .send-content, .send-email {
   display: block;
   margin: 0 auto;
   padding: 0 20px;
-  width: 332px;
+  width: 342px;
   height: 46px;
   font-size: 15px;
   border: 2px solid #d4d4d4;
@@ -1074,10 +1074,10 @@ textarea:focus::-moz-placeholder {
 
 .send-btn {
   display: block;
-  margin: 15px auto 0px;
+  margin: 22px auto 0px;
   width: 376px;
   height: 46px;
-  background-color: gold;
+  background-color: #f9af48;
   border: none;
   font-size: 16px;
   color: #444;
@@ -1085,7 +1085,7 @@ textarea:focus::-moz-placeholder {
 }
 
 .send-btn:hover {
-  background-color: orange;
+  color: #fff;
 }
 
 footer {
